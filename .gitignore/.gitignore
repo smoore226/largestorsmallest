@@ -1,0 +1,61 @@
+#include<iostream>
+#include<iomanip>
+#include<cmath>
+#include<vector>
+#include<string>
+using namespace std;
+
+int largestVector(const vector<int>& userVector)
+{
+	int counter = 10;
+	int max = userVector[0];
+	//look at it from left to right, the first is biggest so then
+	// compare every number afterwards to the "biggest" and keep reassigning
+	while (counter < userVector.size())
+	{
+		while (counter != index)
+		if (
+			userVector[counter] > userVector[index]
+			)
+		{
+			return userVector[counter];
+			break;
+		}
+
+		else
+
+			return 111111111111111111;
+	}
+	counter - 1;
+	index++;
+}
+
+int smallestVector(const vector<int>& userVector)
+{
+	return 0;
+}
+
+int main()
+{
+	int number;
+	vector<int> maxMin (10);
+	for (int counter = 0; counter < maxMin.size(); counter++)
+	{
+		cout << "Please enter a number for the vector: " << endl;
+		cin >> number;
+		maxMin[counter] = number;
+	}
+
+	cout << largestVector(maxMin) << endl;
+
+}
+/* &&
+			userVector[counter] > userVector[counter + 2] &&
+			userVector[counter] > userVector[counter + 3] &&
+			userVector[counter] > userVector[counter + 4] &&
+			userVector[counter] > userVector[4] &&
+			userVector[counter] > userVector[counter + 5] &&
+			userVector[counter] > userVector[counter + 6] &&
+			userVector[counter] > userVector[counter + 7] &&
+			userVector[counter] > userVector[counter + 8] &&
+			userVector[counter] > userVector[9]*/
